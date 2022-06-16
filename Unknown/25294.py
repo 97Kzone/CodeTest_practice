@@ -21,26 +21,24 @@ def q1(N):
 
     return arr
 
-def q2(N, k):
-    for i in range(len(N)):
-        for j in range(len(N)):
-            if N[i][j] == k:
-                return [i, j]
-
 Q = int(input())
+board = defaultdict(list)
+
 for _ in range(Q):
     nums = list(map(int, input().split()))
-    board = defaultdict(list)
 
+    # 입력받은 값이 dict 에 없다면 추가
     if nums[1] not in board:
         board[nums[1]] = q1(nums[1])
 
-    if len(nums) == 3:
-        res = q2(board[nums[1]], nums[2])
-        print(" ".join(str(i) for i in res))
-    else:
-        res = board[nums[1]]
+    res = board[nums[1]]
+
+    # 쿼리 종류에 따라 구분
+    if nums[0] == 1:
         print(res[nums[2]-1][nums[3]-1])
-    
-
-
+    else:
+        for i in range(len(res)):
+            for j in range(len(res)):
+                if res[i][j] == nums[2]:
+                    print(str(i+1) + " " + str(j+1))
+                    break
