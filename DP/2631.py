@@ -11,4 +11,4 @@ for i in range(N):
         if nums[i] > nums[j]:
             dp[i] = max(dp[i], dp[j]+1)
 
-print(dp)
+print(N-max(dp))
