@@ -7,8 +7,6 @@ x, y = 1, 1
 for _ in range(3, D):
     x, y = y, x + y
 
-print(x, y)
-
 r1, r2 = 0, 0
 for i in range(1, 100000):
     tmp = K - (i * x)
