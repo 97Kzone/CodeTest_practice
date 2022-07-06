@@ -10,7 +10,6 @@ for _ in range(int(input())):
     for i in range(1, N+1):
         check[i] = check[i-1] + files[i-1]
 
-    print(check)
     dp = [[0] * N for _ in range(N)]
     for i in range(1, N):
         for j in range(N-i):
