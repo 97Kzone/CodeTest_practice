@@ -1,0 +1,19 @@
+import sys
+import bisect
+
+input = sys.stdin.readline
+
+for _ in range(int(input())):
+    N, M = map(int, input().split())
+    A = list(map(int, input().split()))
+    B = list(map(int, input().split()))
+    
+    B.sort()
+    
+    cnt = 0
+    for a in A:
+        idx = bisect.bisect_right(B, a-1)
+        cnt += idx
+    
+    print(cnt)
+    
