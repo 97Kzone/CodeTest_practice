@@ -15,7 +15,6 @@ while s <= e:
 
     for x in homes:
         if idx + m <= x:
-            print(x)
             cnt += 1
             idx = x
             
