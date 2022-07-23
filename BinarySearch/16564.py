@@ -14,6 +14,7 @@ def check(ch, i):
     return tmp
 
 res, l, r = 0, ch[0], ch[-1]+K
+
 while l <= r:
     m = (l + r) // 2
     if check(ch, m) <= K:
