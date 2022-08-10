@@ -25,3 +25,4 @@ for _ in range(int(input())):
         j += 1
     
     print(res)
+ 
