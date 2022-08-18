@@ -21,5 +21,6 @@ while True:
 
         else:
             print("danger")
+            
     except:
         exit()
