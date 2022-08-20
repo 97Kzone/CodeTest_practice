@@ -42,7 +42,6 @@ while True:
             tmp = board[i][j] - check[i][j]
             board[i][j] = tmp if tmp > 0 else 0
     
-    
     if cnt == 0:
         print(0)
         break
