@@ -11,7 +11,7 @@ res = 0
 
 for j in range(len(words)):
     d[words[j]] += 1
-    print(d)
+
     while len(d) > N:
         d[words[i]] -= 1
         if d[words[i]] == 0:
