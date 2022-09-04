@@ -23,8 +23,8 @@ for n, l in player.items():
         rooms[idx].append(n)
         idx += 1
 
-for k, v in rooms.items():
-    print("Started!" if len(v) == M else "Waiting!")
+for k, v in t.items():
+    print("Started!" if len(v) == M else "Waiting")
     v = sorted(v)
     for n in v:
         print(player[n], n)
