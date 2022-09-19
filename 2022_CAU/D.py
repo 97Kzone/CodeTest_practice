@@ -17,7 +17,10 @@ while s:
     if len(s) == l:
         print("ERROR!")
         break
+
     res += c
 else:
     print("It's HG!")
     print(res)
+
+# 시간초과 뭐가 문제지 ?
