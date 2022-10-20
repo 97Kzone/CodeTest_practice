@@ -1,6 +1,8 @@
 import sys
 input = sys.stdin.readline
 
+def check():
+    return
 for _ in range(int(input())):
     board = []
     for _ in range(3):
