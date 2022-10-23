@@ -4,6 +4,7 @@ for t in range(1, int(input()) + 1):
     if s[0] != "a":
         print("#{} {}".format(t, res))
         continue    
+    
     for i in range(1, len(s)):
         if ord(s[i]) - ord(s[i-1]) == 1:
             res += 1
