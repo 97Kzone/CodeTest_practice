@@ -23,7 +23,6 @@ public class D2_1983 {
             Arrays.sort(nums, Collections.reverseOrder());
             int idx = 0;
             for (int i=0; i<N; i++) {
-                System.out.println(nums[i] + " " + std);
                 if (nums[i] == std) {
                     idx = i / (N/10); 
                 }
