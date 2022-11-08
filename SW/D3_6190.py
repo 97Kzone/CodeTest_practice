@@ -21,4 +21,4 @@ for t in range(1, int(input())+1):
             if check(tmp):
                 res = max(res, tmp)
     
-    print("{} {}".format(t, res))
+    print("#{} {}".format(t, res))
