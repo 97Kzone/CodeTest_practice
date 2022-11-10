@@ -14,7 +14,7 @@ public class D3_13428J {
             for (int i=0; i<s.length(); i++) {
                 for (int j=i+1; j<s.length(); j++) {
                     char[] nums = s.toCharArray();
-                    
+
                     char tmp = nums[i];
                     nums[i] = nums[j];
                     nums[j] = tmp;
@@ -31,3 +31,4 @@ public class D3_13428J {
         }
     }    
 }
+
