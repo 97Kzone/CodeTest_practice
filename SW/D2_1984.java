@@ -18,5 +18,6 @@ public class D2_1984 {
             }
             System.out.printf("#%d %.0f\n", t, (sum-m-n) / 8.0);
         }
+        sc.close();
     }
 }

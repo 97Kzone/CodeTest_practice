@@ -15,5 +15,6 @@ public class D1_2071 {
 
             System.out.printf("#%d %.0f\n", t, sum/10.0);
         }
+        sc.close();
     }
 }

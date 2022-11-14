@@ -39,5 +39,6 @@ public class D3_14413J {
 
             System.out.printf("#%d %s\n", t, res);
         }
+        sc.close();
     }    
 }

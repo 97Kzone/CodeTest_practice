@@ -29,5 +29,6 @@ public class D2_1983 {
             }
             System.out.printf("#%d %s\n", t, score[idx]);
         }
+        sc.close();
     }    
 }

@@ -32,5 +32,6 @@ public class D3_13038J {
             }
             System.out.printf("#%d %d\n", t, res);
         }
+        sc.close();
     }    
 }

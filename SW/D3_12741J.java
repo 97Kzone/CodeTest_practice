@@ -16,5 +16,6 @@ public class D3_12741J {
             if (res < 0) res = 0;
             System.out.printf("#%d %d\n", t, res);
         }
+        sc.close();
     }
 }

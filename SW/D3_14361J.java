@@ -33,5 +33,6 @@ public class D3_14361J {
             }
             System.out.printf("#%d %s\n", t, flag ? "possible" : "impossible");
         }
+        sc.close();
     }    
 }

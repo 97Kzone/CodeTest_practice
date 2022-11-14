@@ -24,5 +24,6 @@ public class D3_15230J {
             }
             System.out.printf("#%d %d\n", t, res);
         }
+        sc.close();
     }    
 }

@@ -25,5 +25,6 @@ public class D2_1859J {
             }
             System.out.printf("#%d %d\n", t, res);
         }
+        sc.close();
     }
 }

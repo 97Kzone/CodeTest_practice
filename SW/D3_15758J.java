@@ -31,6 +31,7 @@ public class D3_15758J {
 
             System.out.printf("#%d %s\n", t, res);
         }
+        sc.close();
     }
 
     public static int gcd(int num1, int num2) {

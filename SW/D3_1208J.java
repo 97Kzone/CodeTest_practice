@@ -56,7 +56,8 @@ public class D3_1208J {
                 }
 
             System.out.printf("#%d %d\n", t, M-n);
-        }    
+        }
+        sc.close();    
     }
 
     static int[] check(int[] arr) {
@@ -76,4 +77,5 @@ public class D3_1208J {
         int[] res = {M, n, Mi, ni};
         return res;
     }
+
 }

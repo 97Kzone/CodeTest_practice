@@ -12,5 +12,6 @@ public class D3_12368J {
             int B = sc.nextInt();
             System.out.printf("#%d %d\n", t, (A+B)%24);
         }
+        sc.close();
     }    
 }

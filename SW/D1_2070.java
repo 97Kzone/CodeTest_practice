@@ -20,5 +20,6 @@ public class D1_2070 {
 
             System.out.printf("#%d %s\n", t, res);
         }
+        sc.close();
     }
 }

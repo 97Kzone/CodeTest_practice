@@ -29,6 +29,7 @@ public class D3_13428J {
 
             System.out.printf("#%d %d %d\n", t, m, M);
         }
+        sc.close();
     }    
 }
 
