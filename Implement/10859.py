@@ -8,7 +8,8 @@ def isPrime(n):
             return False
     return True
 
-if not isPrime(int(N)):
+
+if not isPrime(int(N)) or int(N) == 1:
     print("no")
 else:
     num = ""
