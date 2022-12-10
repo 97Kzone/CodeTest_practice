@@ -16,6 +16,6 @@ for k, v in dic.items():
     if v == 1:
         res.append(k)
 
-sorted(k, reverse=True)
+res = sorted(res, reverse=True)
 for v in res:
     print(v)
