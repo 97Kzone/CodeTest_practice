@@ -40,5 +40,3 @@ for i in range(N):
 for v1, v2 in res:
     print(v1, v2)
  
-
-print(res)
