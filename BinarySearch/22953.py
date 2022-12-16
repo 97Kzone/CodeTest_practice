@@ -28,7 +28,7 @@ def check(k, v):
             continue
 
         nums[i] -= 1
-        res = min(res, check(i, k+1))
+        res = min(res, check(i, v+1))
         nums[i] += 1
     
     return res

@@ -28,7 +28,6 @@ def bfs(a, b, value, visited):
                     visited[nx][ny] = 1
                     q.append((nx, ny))
  
- 
 result = 0
 for i in range(maxNum): 
     visited = [[0] * n for i in range(n)]
