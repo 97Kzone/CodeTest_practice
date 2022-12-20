@@ -20,7 +20,7 @@ while q:
         ny = y + dy
 
         if 0 <= nx < N and 0 <= ny < N:
-            if visit[nx][ny] == -1:
+            if visit[nx][ny] == -1: 
                 q.append((nx, ny))
                 visit[nx][ny] = visit[x][y] + 1
 
