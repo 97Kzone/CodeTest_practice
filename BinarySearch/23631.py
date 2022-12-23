@@ -1,9 +1,9 @@
+#다른분의 풀이를 참조하여 작성한 코드
 import sys
 input = sys.stdin.readline
 
 def check():
     l, r = 0, 10**6
-
     while l < r:
         m = (l+r)//2
 
