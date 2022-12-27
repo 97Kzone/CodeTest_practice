@@ -13,7 +13,7 @@ if N == 1:
 
 if nums[i] <= M:
     t += nums[i]
-    
+
 while i <= j and j < N:
     tmp = t + nums[j]
     if tmp <= M:
@@ -25,7 +25,7 @@ while i <= j and j < N:
             j += 1
             t = 0
         else:
-            t -= nums[j]
+            t -= nums[i]
             i += 1
     
     res = max(res, t)
