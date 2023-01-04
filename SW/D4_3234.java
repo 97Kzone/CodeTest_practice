@@ -36,6 +36,7 @@ public class D4_3234 {
         }
     }
 
+    //가능한 경우인지 확인
     public static void count(int l, int r, int v) {
         if (l < r) return;
 
