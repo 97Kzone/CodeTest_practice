@@ -1,9 +1,6 @@
 package BackTracking;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Scanner;
-import java.util.Set;
+import java.util.*;
 
 public class S2_15666 {
     static int N, M;
@@ -19,13 +16,13 @@ public class S2_15666 {
             nums.add(sc.nextInt());
         }
         std = new int[nums.size()];
-
         int idx = 0;
 
         res = new ArrayList<>();
         for (int num : nums) {
             std[idx++] = num;
         }
+        Arrays.sort(std);
         check(0);
     }
 
