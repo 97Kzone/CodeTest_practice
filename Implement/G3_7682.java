@@ -69,9 +69,11 @@ public class G3_7682 {
         if (x > 0) {
             if (o > 0) return false;
             if (cx - co == 1) return true;
+            return false;
         }
         if (o > 0) {
             if (cx == co) return true;
+            return false;
         }
         if (cx + co == 9) return true;
         return false;
