@@ -51,8 +51,8 @@ public class G1_1208 {
         int l = 0, r = n2.size()-1;
         res = 0;
 
-        int v1, v2, tmp;
-        int std;
+        long v1, v2, tmp;
+        long std;
         while (l < n1.size() && r > -1) {
             std = n1.get(l) + n2.get(r);
             
