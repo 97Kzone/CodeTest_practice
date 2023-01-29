@@ -19,6 +19,7 @@ public class D4_3234 {
                 nums[i] = sc.nextInt();
             }
 
+            res = 0;
             pm(0);
             System.out.printf("#%d %d\n", t, res);
         }
