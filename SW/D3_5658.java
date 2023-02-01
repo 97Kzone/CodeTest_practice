@@ -2,7 +2,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
@@ -35,12 +34,7 @@ public class D3_5658 {
             ArrayList<Integer> nums = new ArrayList<>(set);
             Collections.sort(nums, Collections.reverseOrder());
             
-            for (int n : nums) {
-                System.out.println(n);
-            }
             System.out.printf("#%d %d\n", t, nums.get(K-1));
-            
-
         }
     }
 }
