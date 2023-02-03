@@ -1,47 +1,78 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 import java.util.StringTokenizer;
 
+// 조합 + 완전탐색
 public class D4_5671 {
-    static int N, M, cnt;
-    static int[] std, word;
-    public static void main(String[] args) throws IOException{
+    static int N, M, res;
+    static String[] key;
+    static List<String[]> words;
+    static Set<String> word;
+
+    static void sol() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
-        int T = Integer.parseInt(br.readLine());
 
+        int T = Integer.parseInt(br.readLine());
         for (int t = 1; t <= T; t++) {
-            st = new StringTokenizer(br.readLine());
+            st = new StringTokenizer(br.readLine());    
             N = Integer.parseInt(st.nextToken());
             M = Integer.parseInt(st.nextToken());
 
-            std = new int[26];
+            words = new ArrayList<>();
+            word = new HashSet<>();
             String s = "";
-            for (int i = 0; i < N; i++) {
-                word = new int[26];
-                s = br.readLine();
-                
-                for (int j = 0; j < s.length(); j++) {
-                    word[s.charAt(j)-'a'] = 1;
-                }
-                
-                cnt = 0;
-                for (int n : word) {
-                    cnt += n;
-                }
 
-                if (cnt > M) continue; // M개 이상의 알파벳이면 continue
-                
-                // M개 이하의 단어면 std 배열에 더해준다
-                for (int j = 0; j < 26; j++) {
-                    std[j] += word[j];
+            // 1. 조합에 쓸 알파벳 추출
+            for (int i = 0; i < N; i++) {
+                s = br.readLine();
+                String tmp = "";
+                for (int j = 0; j < s.length(); j++) {
+                    if (s.indexOf(s.charAt(j)) == j) {
+                        tmp += s.charAt(j);
+                        word.add(String.valueOf(s.charAt(j)));
+                    }
                 }
+                words.add(tmp.split(""));
             }
 
-            Arrays.sort(std);
-            System.out.printf("#%d %d\n", t, std[25]);
+            
+            // 2. 조합
+            key = word.toArray(new String[0]);
+            res = 0;
+            cb(0, 0, new String[M]);
+            System.out.printf("#%d %d\n", t, res);
         }
+    }
+
+    static void cb(int cnt, int idx, String[] arr) {
+        if (cnt == M) {
+            check(arr);
+            return;
+        }
+
+        for (int i = idx; i < key.length; i++) {
+            arr[cnt] = key[i];
+            cb(cnt+1, i+1, arr);
+        }
+    }
+
+    // 3. 가르칠 알파벳 조합으로 몇개까지 될까 판단
+    static void check(String[] std) {
+        List<String> list = Arrays.asList(std);
+        int cnt = 0;
+        for (String[] s : words) {
+            if(list.containsAll(Arrays.asList(s))) cnt++;
+        }
+        res = cnt > res ? cnt : res;
+    }
+    public static void main(String[] args) throws IOException {
+        sol();
     }
 }
