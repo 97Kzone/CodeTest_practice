@@ -3,6 +3,7 @@ package Implement;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.sql.Connection;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
@@ -40,7 +41,7 @@ public class S4_2567 {
                         nx = i + moves[k][0];
                         ny = j + moves[k][1];
 
-                        // 모서리는 0이 2개 
+                        // 모서리는 0이 2개 => 0 찾아도 마저 사방 탐색..
                         if (nx >= 0 && ny >= 0 && nx < 101 && ny < 101) {
                             if (board[nx][ny] == 0) {
                                 res++;
@@ -53,6 +54,5 @@ public class S4_2567 {
             }
         }
         System.out.print(res);
-
     }
 }
