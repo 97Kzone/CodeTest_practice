@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch SW_5648",
+            "request": "launch",
+            "mainClass": "Implement.SW_5648",
+            "projectName": "CodeTest_1a4fcfbf"
+        },
+        {
+            "type": "java",
             "name": "Launch D3_5607",
             "request": "launch",
             "mainClass": "D3_5607",
