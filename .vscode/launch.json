@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch G1_17472",
+            "request": "launch",
+            "mainClass": "Graph.G1_17472",
+            "projectName": "CodeTest_1a4fcfbf"
+        },
+        {
+            "type": "java",
             "name": "Launch G3_16236",
             "request": "launch",
             "mainClass": "BFS.G3_16236",
