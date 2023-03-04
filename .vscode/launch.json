@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SW_2477",
+            "request": "launch",
+            "mainClass": "SW_2477",
+            "projectName": "CodeTest_1a4fcfbf"
+        },
+        {
+            "type": "java",
+            "name": "B",
+            "request": "launch",
+            "mainClass": "B",
+            "projectName": "CodeTest_1a4fcfbf"
+        },
+        {
+            "type": "java",
+            "name": "SW_2105",
+            "request": "launch",
+            "mainClass": "SW_2105",
+            "projectName": "CodeTest_1a4fcfbf"
+        },
+        {
+            "type": "java",
             "name": "Launch G1_17472",
             "request": "launch",
             "mainClass": "Graph.G1_17472",
