@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SW_1767_2",
+            "request": "launch",
+            "mainClass": "SW_1767_2",
+            "projectName": "CodeTest_1a4fcfbf"
+        },
+        {
+            "type": "java",
+            "name": "SW_5653",
+            "request": "launch",
+            "mainClass": "SW_5653",
+            "projectName": "CodeTest_1a4fcfbf"
+        },
+        {
+            "type": "java",
             "name": "SW_2477",
             "request": "launch",
             "mainClass": "SW_2477",
