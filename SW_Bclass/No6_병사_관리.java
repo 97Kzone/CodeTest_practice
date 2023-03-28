@@ -1,4 +1,4 @@
-package solution.day01;// author: 류호석(rhs0266)
+package SW_Bclass;// author: 류호석(rhs0266)
 
 class No6_병사_관리 {
     public class Node {
