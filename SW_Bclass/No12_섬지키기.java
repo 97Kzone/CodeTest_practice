@@ -1,4 +1,4 @@
-package SW_Bclass;
+package SW_Bclass; // author: 류호석(rhs0266)
 
 import java.util.*;
 
