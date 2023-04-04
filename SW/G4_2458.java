@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class G4_2458 {
+public class D4_5643 {
     static int N, M, res, std;
     static int[][] dp1, dp2;
     public static void main(String[] args) throws IOException {
