@@ -1,3 +1,5 @@
+package PG_Level2;
+
 import java.util.*;
 
 /* 접근법
