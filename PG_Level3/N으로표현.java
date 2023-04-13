@@ -1,5 +1,3 @@
-package PG_Level3;
-
 import java.util.*;
 
 /*
@@ -12,10 +10,30 @@ class Solution {
     static Set<Integer>[] dp; // 이름만 DP
     
     public int solution(int N, int number) {
-        int answer = 0;
         dp = new HashSet[9];    
         
+        for (int i = 0; i < 9; i++) dp[i] = new HashSet<>();
         
-        return answer;
+        // 1. 초기 값
+        dp[1].add(N); 
+        
+        // 2. 숫자 1개당 연산 4번 해보자..!
+        for (int i = 2; i < 9; i++) {
+            // 이전 Set의 모든 숫자들을 순회
+            for (int num : dp[i-1]) {
+                if (num == number) return i-1;
+                
+                dp[i].add(Integer.valueOf(num + "" + num));
+                dp[i].add(num + N);
+                dp[i].add(num - N);
+                dp[i].add(num * N);
+                
+                if (num != 0) dp[i].add(num / N);
+            }
+            
+            // if (dp[i].contains(number)) return i;
+        }
+        
+        return -1;
     }
 }
