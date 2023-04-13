@@ -14,24 +14,27 @@ class Solution {
         
         for (int i = 0; i < 9; i++) dp[i] = new HashSet<>();
         
-        // 1. 초기 값
-        dp[1].add(N); 
+        String tmp = N + "";  
         
-        // 2. 숫자 1개당 연산 4번 해보자..!
-        for (int i = 2; i < 9; i++) {
-            // 이전 Set의 모든 숫자들을 순회
-            for (int num : dp[i-1]) {
-                if (num == number) return i-1;
-                
-                dp[i].add(Integer.valueOf(num + "" + num));
-                dp[i].add(num + N);
-                dp[i].add(num - N);
-                dp[i].add(num * N);
-                
-                if (num != 0) dp[i].add(num / N);
-            }
+        // 가능한 모든 연산을 해보자
+        for (int i = 1; i < 9; i++) {
+
+            // 초기값
+            dp[i].add(Integer.valueOf(tmp.repeat(i)));
             
-            // if (dp[i].contains(number)) return i;
+            for (int j = 1; j < i; j++) {
+                for (int v1 : dp[j]) {
+                    for (int v2 : dp[i-j]) {
+                        dp[i].add(v1 + v2);
+                        dp[i].add(v1 * v2);
+                        dp[i].add(v1 - v2);
+                        
+                        if (v2 != 0) dp[i].add(v1 / v2);
+                    }
+                 }
+            }
+            if (dp[i].contains(number)) return i;
+            
         }
         
         return -1;
