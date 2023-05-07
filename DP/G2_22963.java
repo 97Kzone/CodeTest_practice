@@ -8,7 +8,6 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 public class G2_22963 {
-
     static final int INF = 998244353;
     static int N;
     static List<Integer> lis, v;
