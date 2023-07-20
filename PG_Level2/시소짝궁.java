@@ -24,7 +24,6 @@ class Solution {
             dist[w * 4]++;
         }
 
-
         return answer;
     }
 }
