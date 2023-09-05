@@ -3,14 +3,12 @@ package Implement;
 import java.util.Scanner;
 
 public class S1_13884 {
-    static int K, N;
-    static int[] a;
-    public static void test() {
-        Scanner sc = new Scanner(System.in);
-        K = sc.nextInt();
-        N = sc.nextInt();
-        a = new int[N + 1];
-        
+
+    public static void test(Scanner sc) {
+        int K = sc.nextInt();
+        int N = sc.nextInt();
+        int[] a = new int[N + 1];
+
         for (int i = 1; i <= N; i++)
             a[i] = sc.nextInt();
 
@@ -39,9 +37,8 @@ public class S1_13884 {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         while (t-- > 0) {
-            test();
+            test(sc);
         }
         sc.close();
     }
 }
-
