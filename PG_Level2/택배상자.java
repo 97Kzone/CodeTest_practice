@@ -7,16 +7,17 @@ class Solution {
         int answer = 0;
 
         Stack<Integer> stk = new Stack<>();
+
         int now = 1;
         for (int num : order) {
             while (now <= num) {
                 stk.add(now);
-                now += 1;
+                now++;
             }
 
             if (stk.peek() == num) {
                 stk.pop();
-                answer += 1;
+                answer++;
             } else
                 break;
         }
