@@ -30,6 +30,6 @@ public class S1_16568 {
             }
         }
 
-        System.out.println(dp[N]);
+        System.out.print(dp[N]);
     }
 }
