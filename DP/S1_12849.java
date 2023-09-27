@@ -10,22 +10,22 @@ public class S1_12849 {
     public static void main(String[] args) throws NumberFormatException, IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        int D = Integer.parseInt(br.readLine());
-        long[][] map = new long[D + 1][8];
+        int N = Integer.parseInt(br.readLine());
+        long[][] map = new long[N + 1][8];
         map[0][0] = 1;
 
-        for (int d = 0; d < D; d++) {
-            map[d + 1][0] = (map[d][1] + map[d][2]) % std;
-            map[d + 1][1] = (map[d][0] + map[d][2] + map[d][3]) % std;
-            map[d + 1][2] = (map[d][0] + map[d][1] + map[d][3] + map[d][5]) % std;
-            map[d + 1][3] = (map[d][1] + map[d][2] + map[d][4] + map[d][5]) % std;
-            map[d + 1][4] = (map[d][3] + map[d][5] + map[d][6]) % std;
-            map[d + 1][5] = (map[d][2] + map[d][3] + map[d][4] + map[d][7]) % std;
-            map[d + 1][6] = (map[d][4] + map[d][7]) % std;
-            map[d + 1][7] = (map[d][5] + map[d][6]) % std;
+        for (int i = 0; i < N; i++) {
+            map[i + 1][0] = (map[i][1] + map[i][2]) % std;
+            map[i + 1][1] = (map[i][0] + map[i][2] + map[i][3]) % std;
+            map[i + 1][2] = (map[i][0] + map[i][1] + map[i][3] + map[i][5]) % std;
+            map[i + 1][3] = (map[i][1] + map[i][2] + map[i][4] + map[i][5]) % std;
+            map[i + 1][4] = (map[i][3] + map[i][5] + map[i][6]) % std;
+            map[i + 1][5] = (map[i][2] + map[i][3] + map[i][4] + map[i][7]) % std;
+            map[i + 1][6] = (map[i][4] + map[i][7]) % std;
+            map[i + 1][7] = (map[i][5] + map[i][6]) % std;
         }
 
-        System.out.println(map[D][0]);
+        System.out.println(map[N][0]);
     }
 
 }

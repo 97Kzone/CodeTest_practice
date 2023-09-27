@@ -43,7 +43,7 @@ public class S1_1743 {
             }
         }
 
-        System.out.println(res);
+        System.out.print(res);
     }
 
     static void bfs(int x, int y) {
