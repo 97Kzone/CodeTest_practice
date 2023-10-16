@@ -35,6 +35,6 @@ public class S5_29615 {
             }
         }
 
-        System.out.println(M - cnt);
+        System.out.print(M - cnt);
     }
 }
