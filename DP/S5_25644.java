@@ -20,6 +20,6 @@ public class S5_25644 {
             res = Math.max(res, tmp - min);
             min = Math.min(min, tmp);
         }
-        System.out.println(res);
+        System.out.print(res);
     }
 }
