@@ -18,7 +18,7 @@ public class S5_14912 {
             res += check(i, D);
         }
 
-        System.out.println(res);
+        System.out.print(res);
     }
 
     static int check(int n, int d) {
