@@ -31,8 +31,8 @@ public class S5_23253 {
         }
 
         if (flag)
-            System.out.println("Yes");
+            System.out.print("Yes");
         else
-            System.out.println("No");
+            System.out.print("No");
     }
 }
