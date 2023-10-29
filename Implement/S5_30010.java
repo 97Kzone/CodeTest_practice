@@ -15,6 +15,6 @@ public class S5_30010 {
         for (int i = 1; i < N; i++) {
             sb.append(i + " ");
         }
-        System.out.println(sb.toString());
+        System.out.print(sb.toString());
     }
 }
