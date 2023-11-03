@@ -21,7 +21,7 @@ public class S5_1251 {
             }
         }
         Collections.sort(arr);
-        System.out.println(arr.get(0));
+        System.out.print(arr.get(0));
     }
 
     static String check(final String s, final int a, final int b) {
