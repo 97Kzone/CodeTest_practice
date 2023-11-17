@@ -19,8 +19,8 @@ public class S1_15991 {
         dp[5] = 3;
         dp[6] = 6;
 
-        for (int i = 7; i <= 100001; i++)
-            dp[i] = (dp[i - 2] + dp[i - 4] + dp[i - 6]) % 1_000_000_009;
+        for (int i = 7; i <= 100000; i++)
+            dp[i] = (dp[i - 2] + dp[i - 4] + dp[i - 6]) % 1000000009;
 
         for (int i = 0; i < n; i++) {
             int t = Integer.parseInt(br.readLine());
