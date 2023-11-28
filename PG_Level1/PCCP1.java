@@ -1,7 +1,5 @@
 package PG_Level1;
 
-import java.util.*;
-
 class PCCP1 {
     
     public int solution(int[] bandage, int health, int[][] attacks) {
