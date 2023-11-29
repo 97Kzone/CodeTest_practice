@@ -39,7 +39,7 @@ public class S5_15702 {
             sum.put(idx, v);
         }
 
-        int res1 = 101, res2 = 0;
+        int res1 = 100001, res2 = 0;
         for (int k : sum.keySet()) {
             if (res2 < sum.get(k)) {
                 res1 = k;
