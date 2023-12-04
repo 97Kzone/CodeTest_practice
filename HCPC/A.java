@@ -29,6 +29,6 @@ public class A {
             sb.append("\n");
         }
 
-        System.out.println(sb.toString());
+        System.out.print(sb.toString());
     }
 }
