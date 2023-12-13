@@ -34,7 +34,7 @@ public class G5_24843 {
         int t;
         Queue<Integer> q = new ArrayDeque<>();
         while (!pq2.isEmpty()) {
-            t = pq2.poll();
+            t = pq2.peek();
 
             for (int i = 0; i < M; i++) {
                 if (pq2.peek() - t == 0)
@@ -50,7 +50,7 @@ public class G5_24843 {
             res += t;
             check();
         }
-        System.out.println(res);
+        System.out.print(res);
     }
     
     static void check() {
