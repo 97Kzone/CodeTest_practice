@@ -28,7 +28,7 @@ public class S1_23758 {
         int idx = N % 2 != 0 ? (N / 2) + 1 : N / 2;
         int v;
         for (int i = 0; i < idx; i++) {
-            v = nums[idx];
+            v = nums[i];
             while (v > 1) {
                 v /= 2;
                 res++;
