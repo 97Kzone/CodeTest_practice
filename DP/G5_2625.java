@@ -54,6 +54,6 @@ public class G5_2625 {
                 }
             }
         }
-        System.out.println(dp[K][T]);
+        System.out.print(dp[K][T]);
     }
 }
