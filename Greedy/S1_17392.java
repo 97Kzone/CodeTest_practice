@@ -34,13 +34,13 @@ public class S1_17392 {
         int flag = M - std;
         while (true) {
             for (int i = 0; i < N + 1; i++) {
-                if (flag == 0) break;
+                if (flag <= 0) break;
 
                 nums2[i]++;
                 flag--;
             }
             
-            if (flag == 0) break;
+            if (flag <= 0) break;
         }
 
         for (int i = 0; i < N + 1; i++) {
