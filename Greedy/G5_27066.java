@@ -15,7 +15,7 @@ public class G5_27066 {
         StringTokenizer st;
 
         N = Integer.parseInt(br.readLine());
-        nums = new int[N+1];
+        nums = new int[N];
         long res = 0;
 
         st = new StringTokenizer(br.readLine());
@@ -24,9 +24,14 @@ public class G5_27066 {
             res += nums[i];
         }
 
+        if (N == 1) {
+            System.out.print(res);
+            return;
+        }
+
         Arrays.sort(nums);
 
         double result = Math.max((double) res / N, (double) nums[N - 2]);
-        System.out.printf("%.6f\n", result);
+        System.out.printf("%.6f", result);
     }
 }
