@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayDeque;
+import java.util.Arrays;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
@@ -12,6 +13,7 @@ public class S1_10164 {
     static int N, M, K;
     static int[][] board;
     static int[][] moves = { { 0, 1 }, { 1, 0 } };
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
@@ -20,57 +22,30 @@ public class S1_10164 {
         M = Integer.parseInt(st.nextToken());
         K = Integer.parseInt(st.nextToken());
 
-        board = new int[N][M];
-        int idx = 1;
-        int tx = K != 0 ? K / N : 0;
-        int ty = K != 0 ? K % M : 0;
+        board = new int[N + 1][M + 1];
 
-        for (int i = 0; i < N; i++) {
-            for (int j = 0; j < M; j++) {
-                board[i][j] = idx++;
+        for (int i = 1; i <= N; i++) {
+            for (int j = 1; j <= M; j++) {
+                if (i == 1 || j == 1)
+                    board[i][j] = 1;
+                else
+                    board[i][j] = board[i - 1][j] + board[i][j - 1];
             }
         }
 
-        if (tx != 0 && ty != 0) {
-            int res1 = check(0, 0, tx - 1, ty - 1);
-            int res2 = check(tx - 1, ty - 1, N - 1, M - 1);
-
-            System.out.println(res1 * res2);
+        int v1, v2;
+        if (K == 0) {
+            System.out.print(board[N][M]);
         } else {
-            int res = check(0, 0, N - 1, M - 1);
-            System.out.print(res);
+            int x1 = ((K - 1) / M) + 1;
+            int y1 = K - (x1 - 1) * M;
+            int x2 = N - (x1 - 1);
+            int y2 = M - (y1 - 1);
+
+            v1 = board[x1][y1];
+            v2 = board[x2][y2];
+
+            System.out.print(v1 * v2);
         }
-    }
-    
-    static int check(int sx, int sy, int tx, int ty) {
-        Queue<int[]> q = new ArrayDeque<>();
-        q.offer(new int[] {sx, sy});
-
-        int[] now;
-        int nx, ny;
-        int res = 0;
-        while (!q.isEmpty()) {
-            now = q.poll();
-
-            if (now[0] == tx && now[1] == ty) {
-                res++;
-                continue;
-            }
-
-            for (int[] move : moves) {
-                nx = now[0] + move[0];
-                ny = now[1] + move[1];
-
-                if (!isPossible(nx, ny))
-                    continue;
-
-                q.offer(new int[] { nx, ny });
-            }
-        }
-        return res;
-    }
-
-    static boolean isPossible(int x, int y) {
-        return (0 <= x && x < N) && (0 <= y && y < M);
     }
 }
