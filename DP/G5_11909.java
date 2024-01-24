@@ -30,7 +30,7 @@ public class G5_11909 {
         for (int i = 0; i <= N; i++) dp[i][0] = 1000001;
         
         res = Integer.MAX_VALUE;
-        dp[1][1] = 0;
+        dp[1][1] = 0; 
         check();
 
         System.out.print(dp[N][N]);
