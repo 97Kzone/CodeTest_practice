@@ -37,7 +37,8 @@ public class S4_27952 {
 
             if (std < numA[i]) {
                 res = -1;
-                break;
+                System.out.print(-1);
+                return;
             }
         }
 
