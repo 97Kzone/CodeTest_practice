@@ -10,7 +10,7 @@ public class S2_9658 {
 
         int N = Integer.parseInt(br.readLine());
 
-        if (N % 12 == 0 || N % 12 == 2 || N % 12 == 7 || N % 12 == 9) {
+        if (N % 7 == 1 || N % 7 == 3) {
             System.out.print("CY");
         } else {
             System.out.print("SK");
