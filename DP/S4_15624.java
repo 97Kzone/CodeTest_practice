@@ -9,7 +9,7 @@ public class S4_15624 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         
         int N = Integer.parseInt(br.readLine());
-        int[] dp = new int[N + 1];
+        long[] dp = new long[1000001];
 
         dp[1] = 1;
         for (int i = 2; i <= N; i++) {
