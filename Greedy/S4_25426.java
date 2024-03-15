@@ -28,8 +28,8 @@ public class S4_25426 {
         int[] now;
         for (int i = 1; i <= N; i++) {
             now = pq.poll();
-            tmp = now[0] * i;
-            res += tmp + now[1];
+            tmp = now[0];
+            res += (tmp * i)+ now[1];
         }
 
         System.out.print(res);
