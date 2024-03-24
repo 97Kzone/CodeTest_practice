@@ -7,14 +7,14 @@ import java.util.StringTokenizer;
 
 public class G5_12934 {
 
-    static long x, y, std;
+    static long X, Y, std;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
-        x = Long.parseLong(st.nextToken());
-        y = Long.parseLong(st.nextToken());
-        std = x + y;
+        X = Long.parseLong(st.nextToken());
+        Y = Long.parseLong(st.nextToken());
+        std = X + Y;
 
         long n = 1;
         long tmp;
@@ -30,8 +30,8 @@ public class G5_12934 {
         }
         
         long res = 0;
-        while (x > 0) {
-            x -= n;
+        while (X > 0) {
+            X -= n;
             n--;
             res++;
         }

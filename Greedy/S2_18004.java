@@ -17,7 +17,7 @@ public class S2_18004 {
 
         // 1. a == b 
         if (a == b) {
-            System.out.print(res);
+            System.out.print(0);
             return;
         }
         
