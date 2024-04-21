@@ -39,7 +39,7 @@ public class G4_14923 {
         }
 
         int res = check();
-        System.out.print(res);
+        System.out.print(res == Integer.MAX_VALUE ? -1 : res);
     }
     
     static int check() {
