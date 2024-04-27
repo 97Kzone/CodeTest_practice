@@ -35,9 +35,9 @@ public class S2_19621 {
         }
 
         dp[0] = list.get(0)[2];
-        dp[1] = Math.max(dp[0], list.get(1)[2]);
-
+        
         if (N > 1) {
+            dp[1] = Math.max(dp[0], list.get(1)[2]);
             for (int i = 2; i < dp.length; i++) {
                 dp[i] = Math.max(dp[i - 1], dp[i - 2] + list.get(i)[2]);
             }
