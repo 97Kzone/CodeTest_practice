@@ -40,6 +40,6 @@ public class S3_26215 {
         }
         
         res += pq.size() > 0 ? pq.poll() : 0;
-        System.out.print(res);
+        System.out.print(res > 1440 ? -1 : res);
     } 
 }
