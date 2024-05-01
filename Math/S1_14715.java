@@ -24,7 +24,7 @@ public class S1_14715 {
             }
         }
 
-        int res = (int) Math.ceil(Math.log10(cnt / Math.log10(2)));
+        int res = (int) Math.ceil(Math.log10(cnt) / Math.log10(2));
         System.out.print(res);
     }
 }
