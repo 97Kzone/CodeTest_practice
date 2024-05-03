@@ -15,7 +15,6 @@ public class S5_25206 {
         init();
 
         double res = 0.0;
-        double score = 0.0;
         double sum = 0.0;
 
         String[] s;
