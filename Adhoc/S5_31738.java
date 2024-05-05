@@ -23,7 +23,7 @@ public class S5_31738 {
             return;
         }
 
-        int res = 1;
+        long res = 1;
         for (int i = 1; i <= N; i++) {
             res = (res * i) % M;
         }
