@@ -13,8 +13,8 @@ public class S4_25379 {
         int N = Integer.parseInt(br.readLine());
         st = new StringTokenizer(br.readLine());
 
-        int l = 0, r = 0;
-        int res = 0, idx = 0;
+        long l = 0, r = 0;
+        long res = 0, idx = 0;
         int std;
         for (int i = 0; i < N; i++) {
             std = Integer.parseInt(st.nextToken());
@@ -27,6 +27,6 @@ public class S4_25379 {
             }
         }
 
-        System.out.println(Math.min(l, r) - res);
+        System.out.print(Math.min(l, r) - res);
     }
 }
