@@ -11,7 +11,6 @@ public class S5_5426 {
         StringBuilder sb2;
 
         int T = Integer.parseInt(br.readLine());
-        String res;
         int n;
         for (int t = 0; t < T; t++) {
             String s = br.readLine();
