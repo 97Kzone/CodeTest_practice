@@ -17,8 +17,8 @@ public class S5_15688 {
         } 
 
         Arrays.sort(nums);
-        for (int n : nums) {
-            sb.append(n).append("\n");
+        for (int i = 0; i < N; i++) {
+            sb.append(nums[i]).append("\n");
         }
 
         System.out.print(sb);
