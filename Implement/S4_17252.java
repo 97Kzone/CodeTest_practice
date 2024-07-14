@@ -26,6 +26,6 @@ public class S4_17252 {
             N /= 3;
         }
 
-        System.out.println(N % 3 == 2 ? "NO" : "YES");
+        System.out.print(N % 3 == 2 ? "NO" : "YES");
     }
 }
