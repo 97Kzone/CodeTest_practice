@@ -6,7 +6,7 @@ import java.io.*;
 public class S2_28450 {
 
     static int N, M, H;
-    static int[][] board;
+    static long[][] board;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -15,12 +15,12 @@ public class S2_28450 {
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
 
-        board = new int[N + 1][M + 1];
+        board = new long[N + 1][M + 1];
 
         for (int i = 1; i <= N; i++) {
             st = new StringTokenizer(br.readLine());
             for (int j = 1; j <= M; j++) {
-                board[i][j] = Integer.parseInt(st.nextToken());
+                board[i][j] = Long.parseLong(st.nextToken());
             }
         }
 
