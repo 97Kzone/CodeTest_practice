@@ -23,6 +23,6 @@ public class S4_29719 {
 
         BigInteger res = v1.subtract(v2).mod(mod);
 
-        System.out.println(res);
+        System.out.print(res);
     }
 }
