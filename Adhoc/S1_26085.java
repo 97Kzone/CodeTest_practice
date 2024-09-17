@@ -35,7 +35,7 @@ public class S1_26085 {
             }
         }
 
-        if (zero != one) {
+        if (zero % 2 != 0 || one % 2 != 0) {
             System.out.print(-1);
             return;
         }
