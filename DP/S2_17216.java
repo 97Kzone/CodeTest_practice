@@ -18,17 +18,16 @@ public class S2_17216 {
             dp[i] = nums[i];
         }
 
-        //int res = 0;
+        int res = 0;
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < i; j++) {
                 if (nums[i] < nums[j]) {
                     dp[i] = Math.max(dp[i], dp[j] + nums[i]);
                 }
             }
-            //res = Math.max(res, dp[i]);
+            res = Math.max(res, dp[i]);
         }
-        System.out.println(dp[N-1]);
-        //System.out.print(res);
+        System.out.print(res);
 
 
 
