@@ -16,7 +16,7 @@ public class S2_23560 {
             dp[i] = dp[i - 1] * 2 + dp[i - 1];
         }
 
-        System.out.println(dp[N-1]);
+        System.out.print(dp[N-1]);
 
     }
 }
