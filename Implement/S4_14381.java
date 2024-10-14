@@ -26,7 +26,7 @@ public class S4_14381 {
 
             set.clear();
             std = N;
-            for (int i = 1; i <= 1000; i++) {
+            for (int i = 1; i <= 100; i++) {
                 std = N * i;
                 num = String.valueOf(std).split("");
                 for (String n : num) {
