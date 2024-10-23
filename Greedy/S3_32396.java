@@ -19,7 +19,7 @@ public class S3_32396 {
         nums = new long[N];
         st = new StringTokenizer(br.readLine());
         for (int i = 0; i < N; i++) {
-            nums[i] = Integer.parseInt(st.nextToken());
+            nums[i] = Long.parseLong(st.nextToken());
         }
 
         visit = new boolean[N];
