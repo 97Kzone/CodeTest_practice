@@ -39,6 +39,6 @@ public class S4_16677 {
                 res = word;
             }
         }
-        System.out.println("".equals(res) ? "No Jam" : res);
+        System.out.print("".equals(res) ? "No Jam" : res);
     }
 }
