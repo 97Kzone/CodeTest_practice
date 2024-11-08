@@ -8,7 +8,7 @@ public class S4_26099 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         
-        long N = Integer.parseInt(br.readLine());
+        long N = Long.parseLong(br.readLine());
         long res = N / 5;
         long mod = N % 5;
 
