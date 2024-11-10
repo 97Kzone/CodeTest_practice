@@ -37,6 +37,7 @@ public class S5_31430 {
                 res += (s.charAt(i) - 'a') * v;
                 v *= 26;
             }
+            
             System.out.print(res);
         }
     }
