@@ -33,6 +33,6 @@ public class S2_14400 {
             res += Math.abs(std1 - num1[i]) + Math.abs(std2 - num2[i]);
         }
 
-        System.out.println(res);
+        System.out.print(res);
     }
 }
