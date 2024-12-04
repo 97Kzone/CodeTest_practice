@@ -28,7 +28,6 @@ public class S5_29808 {
                     }
                 }
             }
-
             sb.append(list.size() + "\n");
             for (int[] num : list) {
                 sb.append(num[0] + " " + num[1] + "\n");
