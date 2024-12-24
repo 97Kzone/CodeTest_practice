@@ -11,35 +11,20 @@ public class S5_17211 {
         StringTokenizer st = new StringTokenizer(br.readLine());
 
         int N = Integer.parseInt(st.nextToken());
-        int flag = Integer.parseInt(st.nextToken());
+        double M = Integer.parseInt(st.nextToken());
 
-        double[] score = new double[4];
         st = new StringTokenizer(br.readLine());
+        double[] nums = new double[4];
         for (int i = 0; i < 4; i++) {
-            score[i] = Double.parseDouble(st.nextToken());
+            nums[i] = Double.parseDouble(st.nextToken());
         }
+        M = (1 - M) * 1000;
 
-        double good = 0.0;
-        double bad = 0.0;
-
-        if (N == 0)
-            good = 1.0;
-        else
-            bad = 1.0;
-        
-        double gg = score[0];
-        double gb = score[1];
-        double bg = score[2];
-        double bb = score[3];
-
-        double std;
         for (int i = 0; i < N; i++) {
-            std = good;
-            good = good * gg + bad * bg;
-            bad = std * gb + bad * bb;
+            M = M * nums[0] + (1000 - M) * nums[2];
         }
 
-        System.out.println((int) (good * 1000));
-        System.out.print((int) (bad * 1000));
+        System.out.println(String.format("%.0f", M));
+        System.out.print(String.format("%.0f", 1000 - M));
     }
 }
