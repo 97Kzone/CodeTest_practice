@@ -30,7 +30,8 @@ public class S4_22993 {
             if (std > num) {
                 std += num;
             } else if (std == num) {
-                continue;
+                res = "No";
+                break;
             } else {
                 res = "No";
                 break;
