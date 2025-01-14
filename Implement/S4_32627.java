@@ -34,7 +34,7 @@ public class S4_32627 {
         }
 
         for (char c : tmp) {
-            if ('a' <= c && c < 'z') sb.append(c);
+            if ('a' <= c && c <= 'z') sb.append(c);
         }
         System.out.print(sb);
     }
