@@ -38,6 +38,5 @@ public class S3_32396 {
         }
 
         System.out.print(cnt);
-
     }
 }
