@@ -13,12 +13,12 @@ public class S5_25375 {
 
         int Q = Integer.parseInt(br.readLine());
 
-        int a, b;
+        long a, b;
         for (int i = 0 ; i < Q; i++) {
             st = new StringTokenizer(br.readLine());
 
-            a = Integer.parseInt(st.nextToken());
-            b = Integer.parseInt(st.nextToken());
+            a = Long.parseLong(st.nextToken());
+            b = Long.parseLong(st.nextToken());
 
             if (b % a == 0 && b / a != 1) {
                 sb.append(1 + "\n");
