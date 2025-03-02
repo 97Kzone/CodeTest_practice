@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "S3_31803",
+      "request": "launch",
+      "mainClass": "Implement.S3_31803",
+      "projectName": "CodeTest_practice_657329bb"
+    },
+    {
+      "type": "java",
       "name": "S5_19592",
       "request": "launch",
       "mainClass": "BruteForce.S5_19592",
