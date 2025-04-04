@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "S3_10974",
+      "request": "launch",
+      "mainClass": "BackTracking.S3_10974",
+      "projectName": "CodeTest_practice_657329bb"
+    },
+    {
+      "type": "java",
       "name": "S3_9742",
       "request": "launch",
       "mainClass": "BackTracking.S3_9742",
