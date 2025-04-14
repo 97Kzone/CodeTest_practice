@@ -18,7 +18,7 @@ public class S1_1309 {
     }
 
     static void init() {
-        dp = new long[N + 1];
+        dp = new long[100001];
 
         dp[1] = 3;
         dp[2] = 7;
