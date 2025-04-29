@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "S2_16945",
+      "request": "launch",
+      "mainClass": "BruteForce.S2_16945",
+      "projectName": "CodeTest_practice_657329bb"
+    },
+    {
+      "type": "java",
       "name": "S1_33684",
       "request": "launch",
       "mainClass": "Greedy.S1_33684",
