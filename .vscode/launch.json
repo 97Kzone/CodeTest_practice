@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "G5_17352",
+      "request": "launch",
+      "mainClass": "Graph.G5_17352",
+      "projectName": "CodeTest_practice_657329bb"
+    },
+    {
+      "type": "java",
       "name": "S2_16945",
       "request": "launch",
       "mainClass": "BruteForce.S2_16945",
