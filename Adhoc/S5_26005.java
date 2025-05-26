@@ -11,6 +11,10 @@ public class S5_26005 {
         int N = Integer.parseInt(br.readLine());
 
         int std = N * N;
-        System.out.println(N % 2 == 1 ? (std / 2) + 1 : std / 2);
+        if (N == 1) {
+            System.out.print(0);
+            return;
+        }
+        System.out.print(N % 2 == 1 ? (std / 2) + 1 : std / 2);
     }
 }
