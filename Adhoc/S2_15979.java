@@ -23,7 +23,7 @@ public class S2_15979 {
             System.out.print(1);
             return;
         } else {
-            System.out.print(2);
+            System.out.print(2);g
             return;
         }
     }
