@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "S3_11663",
+      "request": "launch",
+      "mainClass": "BinarySearch.S3_11663",
+      "projectName": "CodeTest_practice_657329bb"
+    },
+    {
+      "type": "java",
       "name": "S4_14397",
       "request": "launch",
       "mainClass": "Implement.S4_14397",
