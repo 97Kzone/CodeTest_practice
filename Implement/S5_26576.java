@@ -33,7 +33,7 @@ public class S5_26576 {
             }
 
             sDate = date < 10 ? "0" + date : String.valueOf(date);
-            sYear = dates[2].length() > 2 ? dates[2].substring(dates[2].length()- 2) : "0" + dates[2].charAt(0);
+            sYear = dates[2].length() > 1 ? dates[2].substring(dates[2].length()- 2) : "0" + dates[2].charAt(0);
             bw.write(set.get(dates[0]) + "/" + sDate + "/" + sYear + "\n");
         }
         bw.flush();
