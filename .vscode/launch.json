@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "S2_5350",
+      "request": "launch",
+      "mainClass": "Implement.S2_5350",
+      "projectName": "CodeTest_practice_657329bb"
+    },
+    {
+      "type": "java",
+      "name": "S2_1927",
+      "request": "launch",
+      "mainClass": "Implement.S2_1927",
+      "projectName": "CodeTest_practice_657329bb"
+    },
+    {
+      "type": "java",
       "name": "S5_32292",
       "request": "launch",
       "mainClass": "Implement.S5_32292",
