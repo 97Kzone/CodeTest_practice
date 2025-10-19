@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "S1_27737",
+      "request": "launch",
+      "mainClass": "Graph.S1_27737",
+      "projectName": "CodeTest_practice_657329bb"
+    },
+    {
+      "type": "java",
+      "name": "S3_27737",
+      "request": "launch",
+      "mainClass": "Graph.S3_27737",
+      "projectName": "CodeTest_practice_657329bb"
+    },
+    {
+      "type": "java",
+      "name": "S2_21938",
+      "request": "launch",
+      "mainClass": "Graph.S2_21938",
+      "projectName": "CodeTest_practice_657329bb"
+    },
+    {
+      "type": "java",
       "name": "S1_14562",
       "request": "launch",
       "mainClass": "Graph.S1_14562",
