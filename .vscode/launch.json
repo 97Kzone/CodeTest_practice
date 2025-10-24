@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "S1_29634",
+      "request": "launch",
+      "mainClass": "Graph.S1_29634",
+      "projectName": "CodeTest_practice_657329bb"
+    },
+    {
+      "type": "java",
       "name": "S1_25601",
       "request": "launch",
       "mainClass": "Graph.S1_25601",
