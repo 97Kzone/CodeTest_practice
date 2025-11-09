@@ -33,7 +33,6 @@ public class S5_11809 {
 
         bw.write("".equals(tmp1) ? "YODA" : Integer.parseInt(tmp1) + "");
         bw.write("\n");
-
         bw.write("".equals(tmp2) ? "YODA" : Integer.parseInt(tmp2) + "");
 
         bw.flush();
