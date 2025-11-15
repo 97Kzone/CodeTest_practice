@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Implement.Main",
+      "projectName": "CodeTest_practice_657329bb"
+    },
+    {
+      "type": "java",
+      "name": "S2_31910",
+      "request": "launch",
+      "mainClass": "Implement.S2_31910",
+      "projectName": "CodeTest_practice_657329bb"
+    },
+    {
+      "type": "java",
+      "name": "S4_24571",
+      "request": "launch",
+      "mainClass": "Implement.S4_24571",
+      "projectName": "CodeTest_practice_657329bb"
+    },
+    {
+      "type": "java",
       "name": "S5_9979",
       "request": "launch",
       "mainClass": "Implement.S5_9979",
