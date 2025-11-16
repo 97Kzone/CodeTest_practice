@@ -26,7 +26,6 @@ public class S2_31910 {
         }
         
         dp[0][0] = arr[0][0];
-        
         for (int i = 1; i < n; i++) {
             dp[0][i] = dp[0][i - 1] * 2 + arr[0][i];
         }
