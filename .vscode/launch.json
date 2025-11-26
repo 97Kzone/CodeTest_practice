@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "S3_9996",
+      "request": "launch",
+      "mainClass": "Implement.S3_9996",
+      "projectName": "CodeTest_practice_657329bb"
+    },
+    {
+      "type": "java",
       "name": "S3_33756",
       "request": "launch",
       "mainClass": "Implement.S3_33756",
